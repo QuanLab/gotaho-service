@@ -1,0 +1,31 @@
+{
+    "MySQL": {
+        "Username": "root",
+        "Password": "mothaiba",
+        "Host": "localhost",
+        "Port": 3306,
+        "Database": "pdi_repo",
+        "Parameter": "?parseTime=true"
+    },
+    "Server": {
+        "Port": 8080,
+        "BaseContextPath": "/api/v1/",
+        "PassPhase": "This is a secret pass phase",
+        "Salt" : "Salt for password hasing"
+    },
+    "Carte" : {
+        "KettleStatus" : "http://localhost:9090/kettle/status/?xml=Y",
+        "StartJobURL": "http://localhost:9090/kettle/runJob/?job={{job}}&xml=Y",
+        "StopJobURL": "http://localhost:9090/kettle/stopJob/?name={{job}}&id={{id}}&xml=Y",
+        "JobStatusURL": "http://localhost:9090/kettle/jobStatus/?name={{job_name}}&id={{job_id}}&xml=Y",
+        "JobImageURL": "http://localhost:9090/kettle/jobImage/?name={{job_name}}&id={{job_id}}&xml=Y"
+    },
+    "MailServer": {
+        "Domain": "http://localhost:8080",
+        "Server": "smtp.live.com",
+        "Port": 587,
+        "Email": "quanpv@five9.vn",
+        "Password": "*************",
+        "SenderName": "System Admin"
+    }
+}
